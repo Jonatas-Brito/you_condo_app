@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "80069231043",
+    "project_id": "youcondo-3560f",
+    "storage_bucket": "youcondo-3560f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80069231043:android:c83648e471161b13d03d76",
+        "android_client_info": {
+          "package_name": "com.example.you_condo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "80069231043-tovc7f67nrcnm5h6305o0alsct2khb3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQtB3onytQ0smi8QCZY5hjBFWY0uzTuqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "80069231043-tovc7f67nrcnm5h6305o0alsct2khb3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
