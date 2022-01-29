@@ -1,4 +1,4 @@
-import 'package:YouCondo/core/themes/app_colors.dart';
+import 'package:youcondo/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

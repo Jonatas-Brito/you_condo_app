@@ -1,4 +1,4 @@
-import 'package:YouCondo/src/features/navigation/navigation.dart';
+import 'package:youcondo/src/features/navigation/navigation.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class HomeModule extends Module {

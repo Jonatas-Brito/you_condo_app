@@ -1,4 +1,4 @@
-import 'package:YouCondo/core/model/scheduling.dart';
+import 'package:youcondo/core/model/scheduling.dart';
 import 'package:flutter/material.dart';
 
 class SearchScreen extends StatelessWidget {

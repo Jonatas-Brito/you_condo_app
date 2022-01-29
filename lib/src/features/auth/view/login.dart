@@ -1,11 +1,11 @@
-import 'package:YouCondo/core/components/button_component.dart';
-import 'package:YouCondo/core/components/text_field.dart';
-import 'package:YouCondo/core/database/database.dart';
-import 'package:YouCondo/core/notification/push_notification.dart';
-import 'package:YouCondo/core/themes/app_colors.dart';
-import 'package:YouCondo/core/uma_variavel_ai.dart';
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:youcondo/core/components/button_component.dart';
+import 'package:youcondo/core/components/text_field.dart';
+// import 'package:youcondo/core/notification/push_notification.dart';
+import 'package:youcondo/core/themes/app_colors.dart';
+import 'package:youcondo/core/uma_variavel_ai.dart';
 
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
@@ -22,9 +22,8 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController _documentNumberController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
-  PushNotificationConfigure pushNotificationConfigure =
-      PushNotificationConfigure();
-  late Database db;
+  // PushNotificationConfigure pushNotificationConfigure =
+  //     PushNotificationConfigure();
   // FirebaseMessaging messaging = FirebaseMessaging.instance;
 
   @override
@@ -33,24 +32,13 @@ class _LoginScreenState extends State<LoginScreen> {
     print("========== ${schedulings.status} ==========");
   }
 
-  void _handleMessage(RemoteMessage message) {
-    if (message.data['type'] == 'chat') {
-      Navigator.pushNamed(
-        context,
-        '/chat',
-        arguments: LoginScreen(),
-      );
-    }
-  }
-
-  // void initializerFlutterFire() async {
-  //   try {
-  //     await Firebase.initializeApp();
-  //     setState(() {
-  //       _initialized = true;
-  //     });
-  //   } catch (e) {
-  //     _error = true;
+  // void _handleMessage(RemoteMessage message) {
+  //   if (message.data['type'] == 'chat') {
+  //     Navigator.pushNamed(
+  //       context,
+  //       '/chat',
+  //       arguments: LoginScreen(),
+  //     );
   //   }
   // }
 

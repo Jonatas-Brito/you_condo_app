@@ -18,8 +18,8 @@ ThemeData appTheme(BuildContext context) {
       accentColor: AppColors.springWood,
       appBarTheme: AppBarTheme(
         iconTheme: IconThemeData(color: AppColors.white),
-        backgroundColor: AppColors.feijoa,
-        foregroundColor: AppColors.feijoa,
+        backgroundColor: AppColors.purple,
+        foregroundColor: AppColors.white,
       ),
       textSelectionTheme: TextSelectionThemeData(
           cursorColor: AppColors.stromboli,

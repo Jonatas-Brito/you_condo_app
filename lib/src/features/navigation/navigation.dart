@@ -1,8 +1,8 @@
-import 'package:YouCondo/core/model/scheduling.dart';
-import 'package:YouCondo/core/themes/app_colors.dart';
-import 'package:YouCondo/src/features/help/view/help.dart';
-import 'package:YouCondo/src/features/home/view/home.dart';
-import 'package:YouCondo/src/features/search/view/search.dart';
+import 'package:youcondo/core/model/scheduling.dart';
+import 'package:youcondo/core/themes/app_colors.dart';
+import 'package:youcondo/src/features/help/view/help.dart';
+import 'package:youcondo/src/features/home/view/home.dart';
+import 'package:youcondo/src/features/search/view/search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

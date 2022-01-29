@@ -1,7 +1,7 @@
-import 'package:YouCondo/core/components/card_component.dart';
-import 'package:YouCondo/core/database/database.dart';
-import 'package:YouCondo/core/themes/app_colors.dart';
+import 'package:youcondo/core/components/card_component.dart';
+import 'package:youcondo/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'home_drawer.dart';
@@ -14,18 +14,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  late Database db;
-
   @override
   void initState() {
     super.initState();
-    initialise();
-  }
-
-  initialise() {
-    db = Database();
-    db.initialiase();
-    db.read().then((value) => {print("DB: $value")});
   }
 
   Widget _logoText(BuildContext context, {String? text}) {
@@ -46,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: AppColors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: _logoText(context, text: 'YouCondo'),
+        title: _logoText(context, text: 'youcondo'),
         backgroundColor: AppColors.purple,
         elevation: 0,
       ),
@@ -74,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 50),
               CardComponent(
                 onPressed: () {
-                  db.create(name: "Estados Unidos", code: "EUA");
+                  Modular.to.pushNamed("/register_deliveries");
                 },
                 label: 'Cadastrar encomenda',
                 icon: SvgPicture.asset(
@@ -91,6 +82,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 30,
                   color: AppColors.caramel,
                 ),
+                onPressed: () {
+                  Modular.to.pushNamed("/register_deliveries/upload");
+                },
               ),
               SizedBox(height: 40),
               CardComponent(

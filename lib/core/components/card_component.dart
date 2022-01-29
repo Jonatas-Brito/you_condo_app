@@ -1,5 +1,5 @@
 // import 'package:flutter/material.dart';
-// import 'package:YouCondo/srs/themes/app_colors.dart';
+// import 'package:youcondo/srs/themes/app_colors.dart';
 
 // class CardComponent extends StatelessWidget {
 //   final Widget icon;
@@ -45,7 +45,7 @@
 //   }
 // }
 
-import 'package:YouCondo/core/themes/app_colors.dart';
+import 'package:youcondo/core/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'button_component.dart';
 

@@ -1,4 +1,4 @@
-import 'package:YouCondo/core/themes/styles.dart';
+import 'package:youcondo/core/themes/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
